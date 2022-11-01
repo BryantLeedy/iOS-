@@ -14,6 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+//        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         return true
     }
 
@@ -31,6 +32,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+        debugPrint("userActivity id =")
 
+        if (userActivity.activityType == "com.yuanfudao.dylee") {
+            debugPrint("userActivity id =)")
+        }
+        return true
+    }
+
+    func application(_ application: UIApplication, continueUserActivity: NSUserActivity) -> Bool {
+        debugPrint("=======AAAA")
+        if (userActivity?.activityType == "com.yuanfudao.dylee") {
+            debugPrint("=======\(userActivity)")
+        }
+        return true
+    }
 }
 

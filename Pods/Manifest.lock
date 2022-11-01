@@ -1,0 +1,20 @@
+PODS:
+  - RxSwift (6.5.0)
+  - SnapKit (5.6.0)
+
+DEPENDENCIES:
+  - RxSwift
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - RxSwift
+    - SnapKit
+
+SPEC CHECKSUMS:
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+
+PODFILE CHECKSUM: 2b597aaa2a83a9279e3c6469b0611ca6dc96cb08
+
+COCOAPODS: 1.11.3
